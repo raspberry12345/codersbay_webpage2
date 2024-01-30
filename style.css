@@ -1,0 +1,399 @@
+
+:root{
+    --main-bg-color: rgb(51, 51, 51);
+    --orange: rgb(255, 174, 0);
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 0.8rem;
+    text-align: center;
+    width: 100%;
+    height: 20rem;
+    background-image: url(img/head_background.jpg);
+    /* background-position: -10rem -10rem; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+button{
+    background-color: transparent;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid white;
+    margin-top: 8rem;
+    padding-right: 6.3rem;
+}
+rect{
+    content: "";
+    display: block;
+    
+    
+}
+
+.svg-icon{
+    width: 1.5rem;
+    margin-right: 0.5rem;
+    color: var(--orange);
+    }
+p{
+    white-space: nowrap;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: Playpen Sans;
+    
+    color: white;
+    text-shadow: black 1px 0 10px;
+    animation: Bewegung 5s linear forwards 3s;
+}
+@keyframes Bewegung {
+    0% {
+        transform: rotate(0) translateY(100px);
+        
+    }
+    33% {
+        transform: rotate(-45deg) translateY(150px);
+    
+    }
+    50% {
+        transform: rotate(-90deg) translateY(300px);
+        
+    }
+    88% {
+        transform: rotate(-45deg) translateY(150px);
+        
+    }
+    100% {
+        transform: rotate(0deg) translateY(0px);
+        
+    }
+}
+
+nav {
+    background-color: var(--main-bg-color);
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    display: none;
+}
+
+nav>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav>ul>li>a {
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+
+.line_between {
+    width: 75%;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+}
+.first_section{
+    width: 100%;
+    height: 13rem;
+}
+
+.first_heading {
+    color: var(--main-bg-color);
+    margin-left: 1rem;
+}
+
+main {
+    padding-top: 1rem;
+    width: 100%;
+}
+
+section>ul {
+    list-style: none;
+    
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 20rem;
+    font-size: 1.5rem;
+}
+
+
+/* Kontaktbereich */
+iframe {
+    margin-bottom: 1rem;
+}
+
+.map_container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: var(--main-bg-color);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+
+
+.grid_container {
+    
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 45% 45%;
+    width: 100%;
+    height: 30rem;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.grid_picture>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+#pic2{
+    object-position: -150px;
+}
+.office_heading{
+    margin-bottom: 1rem;
+}
+.section_contact{
+    background-color: var(--main-bg-color);
+    width: 90%;
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+
+
+}
+.section_contact > h2{
+    margin-bottom: 1rem;
+}
+#send_button{
+    margin-top: 0.5rem;
+}
+.afrika{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.greyfilter{
+    filter: grayscale(100%);
+}
+.blur{
+    filter: blur(5px);
+}
+.location_africa{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    
+}
+.location_container{
+    
+    width: 50%;
+}
+h3{
+    color: var(--main-bg-color);
+    font-family: Playpen Sans;
+    font-size: 1.5rem;
+}
+.heading_tours{
+    margin-top: 1rem;
+}
+.tours_list{
+    text-align: center;
+}
+
+
+@media (min-width: 440px){
+    #pic2{
+        object-position: -100px;
+    }
+    #pic3{
+        object-position: 0px -50px;
+    }
+}
+
+@media (min-width: 572px){
+    #pic2{
+        object-position: -50px;
+    }
+    #pic3{
+        object-position: 0px -150px;
+    }
+    .location_africa{
+        flex-direction: row;
+    }
+}
+@media (min-width: 698px){
+    #pic2{
+        object-position: 0px;
+    }
+    #pic3{
+        object-position: 0px -200px;
+    }
+}
+@media (min-width: 814px){
+    
+    #pic3{
+        object-position: 0px -300px;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+}
+@media (min-width: 1050px){
+    
+    #pic3{
+        object-position: 0px -400px;
+    }
+    h2{
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+    h1{
+        font-size: 5rem;
+        text-align: left;
+        padding: 1rem;
+    }
+    p{
+        font-size: 2.2rem;
+    }
+    
+    .grid_container{
+        margin-top: 4rem;
+    }
+    
+    nav>ul {
+        flex-direction: row;
+    }
+    .line_between{
+        display: none;
+    }
+    .svg-icon{
+        width: 2.5rem;
+    }
+    .grid_container{
+        margin-top: 6rem;
+    }
+    header{
+        background-size: cover;
+        background-position: center -10rem;
+        padding-top: 0;
+    }
+    nav{
+        display: block;
+    }
+    button{
+        display: none;
+    }
+}
+@media (min-width: 1230px){
+    .grid_container{
+        height: 35rem;
+    }
+    header{
+        
+        background-position: center -15rem;
+        
+    }
+}
+@media (min-width: 1358px){
+    .grid_container{
+        height: 39rem;
+    }
+    header{
+        
+        background-position: center -18rem;
+        
+    }
+    #pic3{
+        object-position: 0px -500px;
+    }
+}@media (min-width: 1600px){
+    .grid_container{
+        height: 45rem;
+    }
+    #pic1{
+        object-position: 0px -200px;
+    }
+    #pic3{
+        object-position: 0px -600px;
+    }
+}
+@media (min-width: 1800px){
+    .grid_container{
+        height: 50rem;
+    }
+    header{
+        
+        background-position: center -22rem;
+        
+    }
+    
+    #pic3{
+        object-position: 0px -700px;
+    }
+}
+@media (min-width: 1900px){
+    .grid_container{
+        height: 50rem;
+    }
+    header{
+        
+        background-position: center -23rem;
+        
+    }
+    #pic1{
+        object-position: 0px -300px;
+    }
+    #pic3{
+        object-position: 0px -750px;
+    }
+}
+@media (min-width: 2000px){
+    .grid_container{
+        height: 55rem;
+    }
+    #pic1{
+        object-position: 0px -300px;
+    }
+    #pic3{
+        object-position: 0px -900px;
+    }
+    header{
+        
+        background-position: center -27rem;
+        
+    }
+}
